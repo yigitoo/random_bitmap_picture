@@ -1,13 +1,15 @@
 package main
 
 import (
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.String(200, "SELAM!!")
+	route := gin.Default()
+	route.GET("/ping", func(ctx *gin.Context) {
+		ctx.String(http.StatusOK, "SELAM!!")
 	})
-	r.Run(":5555")
+	route.Run(":5555")
 }

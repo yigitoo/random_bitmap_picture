@@ -19,4 +19,8 @@
 
 # Go workspace file
 go.work
+
+# Build and executables
+build/
+/build/
 ./random_profile_picture
