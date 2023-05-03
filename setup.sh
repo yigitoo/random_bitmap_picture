@@ -1,0 +1,1 @@
+RUN_PATH=. go run main.go
